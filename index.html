@@ -21,7 +21,8 @@
       theme: {
         extend: {
           colors: {
-            clifford: '#da373d',
+            'gradient-start': '#FF8938',
+            'gradient-stop': '#F00',
           }
         }
       }
@@ -142,7 +143,7 @@
                     </div>
                   </section>
                   <!-- super client section -->
-                <section class="my-24 flex flex-col lg:flex-row gap-12  rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-24">
+                <section class="my-24 flex flex-col lg:flex-row gap-12  rounded-xl bg-gradient-to-r from-gradient-start to-gradient-stop px-16 py-24">
                   <div class="flex flex-col lg:flex-row items-center">
                     <div class="space-y-5 lg:pr-28">
                       <h2 class="text-5xl font-extrabold text-white">Meet Our Super
@@ -166,7 +167,7 @@
                     </div>
                     <!-- current review -->
                     <div class="absolute z-20 top-40 lg:-left-24 lg:w-[430px] p-10 rounded-lg bg-white ">
-                      <img class="absolute -top-5 -left-5 border-4 border-white rounded-full bg-white" src="/images/client.png" alt="">
+                      <img class="absolute -top-5 -left-5 border-4 border-white rounded-full bg-white" src="./images/client.png" alt="">
                       <p class="">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
                       <h4 class="font-bold mt-5">Ilham Yuda</h4>
                       <p class="font-medium">Businessman</p>
@@ -176,7 +177,7 @@
                     </div>
                     <!-- previous review -->
                     <div class="relative z-10 p-10 opacity-40 rounded-lg bg-white">
-                      <img class="absolute -top-5 -left-5 border-4 border-white rounded-full bg-white" src="/images/client.png" alt="">
+                      <img class="absolute -top-5 -left-5 border-4 border-white rounded-full bg-white" src="./images/client.png" alt="">
                       <p class="">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
                       <h4 class="font-bold mt-5">Ilham Yuda</h4>
                       <p class="font-medium">Businessman</p>
@@ -224,9 +225,11 @@
       <label class="label">
         <span class="label-text">Enter your email address</span>
       </label> 
-      <div class="join">
-        <input type="text" placeholder="username@site.com" class=" " /> 
-        <button class="btn btn-primary join-item">Subscribe</button>
+      <div class="relative">
+        <input type="text" placeholder="username@site.com" class=" py-4 bg-transparent border-b-2 border-black outline-none"/> 
+        <button class="btn text-white btn-primary absolute top-0 right-0 rounded-full bg-gradient-to-r from-gradient-start to-gradient-stop">
+          <i class="fa-solid fa-angle-right"></i>
+        </button>
       </div>
     </fieldset>
   </form>
